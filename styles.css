@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  background-color: hsl(30deg, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.image {
+  background: url("images/image-product-mobile.jpg") top/cover no-repeat;
+  height: 40%;
+  flex: 1 1 0px;
+}
+
+.info {
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 1.5rem;
+  flex: 1 1 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info .product-type {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: hsl(228deg, 12%, 48%);
+}
+
+.info .product-title {
+  color: hsl(212deg, 21%, 14%);
+  font-family: "Fraunces", sans-serif;
+  font-size: 2.2rem;
+  line-height: 1;
+  margin: 1rem 0;
+}
+
+.info .product-desc {
+  font-size: 14px;
+  color: hsl(228deg, 12%, 48%);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.prices {
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.prices .current-price {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(158deg, 36%, 37%);
+}
+
+.prices .old-price {
+  color: hsl(228deg, 12%, 48%);
+  text-decoration: line-through;
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.cart-btn {
+  background-color: hsl(158deg, 36%, 37%);
+  text-align: center;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 10px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  font-family: inherit;
+}
+
+.cart-btn img {
+  margin-right: 10px;
+}
+
+.cart-btn:hover {
+  cursor: pointer;
+  background-color: hsl(158deg, 25%, 27%);
+}
+
+@media (min-width: 769px) {
+  body {
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 660px;
+    height: 460px;
+    flex-direction: row;
+  }
+  .image {
+    background: url("images/image-product-desktop.jpg") center/cover no-repeat;
+    height: 100%;
+  }
+  .info {
+    justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=styles.css.map */
